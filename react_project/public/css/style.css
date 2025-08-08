@@ -1,0 +1,101 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    background-position: center;
+}
+
+@media (max-width:600px) {
+    .wrapper {
+        width: 400px;
+    }
+}
+
+.wrapper .about {
+    position: absolute;
+    right: 10px;
+    bottom: -20px;
+    font-style: italic;
+    color: #7e8479;
+}
+
+.link a {
+    text-decoration: none;
+    color: #284468;
+}
+
+
+.header-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 1.5rem;
+    padding: 1.5rem;
+    padding: 0;
+}
+
+.header-nav li {
+    list-style-type: none;
+}
+
+.header-nav a {
+    text-decoration: none;
+    color: #284468;
+    font-size: calc(1.275rem + .3vw);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formChild {
+    margin: 0.5rem;
+    background-color: #fff;
+    border: 1px solid #7e8479;
+    color: #284468;
+    padding-left: 10px;
+}
+
+.createBtn {
+    margin: 0.5rem;
+}
+
+.createBtn button,
+.openBtn button {
+    background-color: #fff;
+    border: 1px solid #7e8479;
+    color: #284468;
+}
+
+h4,
+div {
+    color: #284468;
+    margin-top: 5px;
+}
+
+.hide {
+    display: none;
+}
+
+.header-nav .active {
+    color: #f18008;
+}
+
+.result {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
